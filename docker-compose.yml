@@ -1,0 +1,10 @@
+version: '2'
+services:
+  stockbit-api:
+    build: .
+    command: npm start
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - "${PORT}:${PORT}"

@@ -15,23 +15,12 @@ const validate = (param, schema) => {
 
 const search = Joi.object().keys({
     title: Joi.string().optional(),
-    type: Joi.string().optional().allow(''),
-    year: Joi.string().optional().allow(''),
-    returnType: Joi.string().optional().allow(''),
-    page: Joi.string().optional().allow(''),
-    callback: Joi.string().optional().allow(''),
-    version: Joi.string().optional().allow('')
+    page: Joi.string().optional().allow('')
 });
 
 const detail = Joi.object().keys({
     id: Joi.string().required(),
-    title: Joi.string().optional().allow(''),
-    type: Joi.string().optional().allow(''),
-    year: Joi.string().optional().allow(''),
-    plot: Joi.string().optional().allow(''),
-    returnType: Joi.string().optional().allow(''),
-    callback: Joi.string().optional().allow(''),
-    version: Joi.string().optional().allow('')
+    title: Joi.string().optional().allow('')
 });
 
 module.exports = {
