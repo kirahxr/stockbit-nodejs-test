@@ -32,7 +32,7 @@ Params:
 |err |message|data |totalData |  datetime  | responseCode |
 |:--:|:-----:|:---:|:--------:|:----------:|:------------:|
 |null|success|JSON |  number  |  datetime  | 200          |
-|true|failed |  -  |     -    |  datetime  | 500          |
+|fail|failed |  -  |     -    |  -  | 500          |
 
 ### Author
 <risky@makira.id>
