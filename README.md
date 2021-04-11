@@ -34,5 +34,9 @@ Params:
 |null|success|JSON |  number  |  datetime  | 200          |
 |fail|failed |  -  |     -    |  -  | 500          |
 
+##### Unit Test
+![image](https://user-images.githubusercontent.com/33960326/114305105-eb01c880-9b00-11eb-8cc8-43f42e8cec35.png)
+
+
 ### Author
 <risky@makira.id>
