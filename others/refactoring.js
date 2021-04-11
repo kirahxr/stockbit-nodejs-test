@@ -3,7 +3,7 @@ function findFirstStringInBracket(str) {
         return ""
     }
 
-    const regex = /\((.*?)\)/g;
+    const regex = /\((.*?)\)/;
     const matches = regex.exec(str)
     if (matches === null) {
         return ""
