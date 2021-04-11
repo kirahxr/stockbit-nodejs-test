@@ -2,7 +2,7 @@
 
 ### Annagram, Refactoring, Query and Databases.
 folder: others
-- Demo for question 3 & 4: <https://replit.com/@makira/stockbit-test>
+- Demo for questions 3 & 4: <https://replit.com/@makira/stockbit-test>
 - PhpMyAdmin for the database and query testing: <https://pma.archv.id/>
 ```
 user: stockbit

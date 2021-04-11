@@ -15,13 +15,7 @@ const detail = async (payload) => {
 	return getData(payload);
 }
 
-const healthCheck = async () => {
-  const sender_id = new OmdbMovies(db);
-  return sender_id.healthCheck();
-};
-
 module.exports = {
 	search,
-	detail,
-  healthCheck
+	detail
 };

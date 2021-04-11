@@ -9,7 +9,8 @@ const search = async (req, res) => {
 		url
 	};
 
-	const validate = validator.isValidPayload(req.query, queryModel.search);
+	const validate = await validator.isValidPayload(req.query, queryModel.search);
+	console.log(validate)
 	if (!validate.err) {
 		const searchMovies = await queryHandler.search(payload);
 		res.status(searchMovies.code).send(searchMovies);
@@ -25,7 +26,7 @@ const detail = async (req, res) => {
 		url
 	};
 
-	const validate = validator.isValidPayload(req.query, queryModel.detail);
+	const validate = await validator.isValidPayload(req.query, queryModel.detail);
 	if (!validate.err) {
 		const detailMovies = await queryHandler.detail(payload);
 		res.status(detailMovies.code).send(detailMovies);

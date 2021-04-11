@@ -16,6 +16,7 @@ class Command {
 
 		const db = new Mysql(config.get('/mysqlConfig'));
 		const insert = await db.query(query, '');
+		console.log(insert)
 
 		return insert;
 	}
